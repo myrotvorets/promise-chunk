@@ -52,5 +52,8 @@
   "bugs": {
     "url": "https://github.com/myrotvorets/promise-chunk/issues"
   },
-  "homepage": "https://github.com/myrotvorets/promise-chunk#readme"
+  "homepage": "https://github.com/myrotvorets/promise-chunk#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
