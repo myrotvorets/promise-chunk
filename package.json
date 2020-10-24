@@ -1,0 +1,57 @@
+{
+  "name": "@myrotvorets/promise-chunk",
+  "version": "1.0.0",
+  "description": "Runs a list of native promises in chunks.",
+  "main": "dist/lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "pretest": "npm run lint",
+    "test": "jest",
+    "posttest": "npm run build"
+  },
+  "files": [
+    "dist/lib/index.d.ts",
+    "dist/lib/index.js",
+    "dist/lib/index.js.map"
+  ],
+  "typings": "dist/lib/index.d.ts",
+  "keywords": [
+    "promise",
+    "chunk",
+    "batch"
+  ],
+  "author": "Myrotvorets <support@myrotvorets.center> (https://myrotvorets.center/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@myrotvorets/eslint-config-myrotvorets-ts": "^1.2.3",
+    "@types/express": "^4.17.8",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.14.2",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "eslint": "^7.11.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "jest": "^26.5.3",
+    "jest-sonar-reporter": "^2.0.0",
+    "merge": "^1.2.1",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myrotvorets/promise-chunk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/myrotvorets/promise-chunk/issues"
+  },
+  "homepage": "https://github.com/myrotvorets/promise-chunk#readme"
+}
