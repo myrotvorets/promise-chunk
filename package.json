@@ -45,7 +45,6 @@
     "lib": "lib",
     "test": "test"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/myrotvorets/promise-chunk.git"
