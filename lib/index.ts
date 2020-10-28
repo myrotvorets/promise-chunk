@@ -33,10 +33,3 @@ export default async function promiseChunk<T>(
 
     return Promise.all(result);
 }
-
-// Without this construct, istanbul refuses to generate coverage for this file
-/* istanbul ignore else */
-if (process.env.NODE_ENV === 'test') {
-    // eslint-disable-next-line no-void
-    void console.error;
-}
