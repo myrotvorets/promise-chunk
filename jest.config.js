@@ -6,7 +6,6 @@ module.exports = merge.recursive(ts_preset, {
     collectCoverageFrom: [
         'lib/**/*.ts',
     ],
-    coverageProvider: 'v8',
     clearMocks: true,
     verbose: true,
     testPathIgnorePatterns: [
