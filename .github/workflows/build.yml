@@ -45,4 +45,4 @@ jobs:
             -Dsonar.links.homepage=${{ steps.ver.outputs.packageHomepage }}
             -Dsonar.links.issue=${{ steps.ver.outputs.packageBugsUrl }}
             -Dsonar.links.scm=${{ steps.ver.outputs.packageScmUrl }}
-        if: ${{ matrix.node_version == '12' && secrets.SONAR_TOKEN != '' }}
+        if: ${{ matrix.node_version == '12' && (github.event_name != 'pull_request' || github.event.pull_request.head == github.event.pull_request.base) }}
