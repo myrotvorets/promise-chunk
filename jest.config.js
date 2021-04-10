@@ -2,7 +2,7 @@ const merge = require('merge');
 const ts_preset = require('ts-jest/jest-preset');
 
 module.exports = merge.recursive(ts_preset, {
-    collectCoverage: true,
+    collectCoverage: process.env.COLLECT_COVERAGE !== '0',
     collectCoverageFrom: [
         'lib/**/*.ts',
     ],
