@@ -31,5 +31,5 @@ export default async function promiseChunk<T>(
         await Promise.race(queue);
     }
 
-     return Promise.all(result);
-   }
+    return Promise.all(result);
+}
