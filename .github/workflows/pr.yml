@@ -10,9 +10,9 @@ env:
 
 jobs:
   ci:
-    name: Build and tets
+    name: Build and test
     runs-on: ubuntu-latest
-    if: ${{ !contains(github.event.head_commit.message, '[ci skip]') && (github.event.pull_request.head == github.event.pull_request.base) }}
+    if: ${{ !contains(github.event.head_commit.message, '[ci skip]') && (github.event.pull_request.head.repo.full_name == github.event.pull_request.base.repo.full_name) }}
     steps:
       - name: Check out the source code
         uses: actions/checkout@v2
