@@ -59,7 +59,7 @@ describe('promiseChunk', () => {
         const end = timeToMs(process.hrtime());
 
         expect(actual).toStrictEqual(expected);
-        expect(s).toBe(`2\n3\n1\n`);
+        expect(s).toBe(`2\n3\n1\n\n`);
         expect(end - start).toBeGreaterThanOrEqual(290);
         expect(end - start).toBeLessThanOrEqual(310);
     });
