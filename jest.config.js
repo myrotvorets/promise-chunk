@@ -13,4 +13,9 @@ module.exports = merge.recursive(ts_preset, {
         '<rootDir>/node_modules/',
     ],
     testResultsProcessor: 'jest-sonar-reporter',
+    reporters: [
+        "default",
+        process.env.GITHUB_ACTIONS === 'true' ? 'jest-github-actions-reporter' : null,
+    ].filter(Boolean),
+    testLocationInResults: true
 });
