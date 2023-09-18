@@ -1,7 +1,7 @@
 # promise-chunk
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=myrotvorets_promise-chunk&metric=alert_status)](https://sonarcloud.io/dashboard?id=myrotvorets_promise-chunk)
-![Build and Test CI](https://github.com/myrotvorets/promise-chunk/workflows/Build%20and%20Test%20CI/badge.svg)
+[![Build and Test](https://github.com/myrotvorets/promise-chunk/actions/workflows/build.yml/badge.svg)](https://github.com/myrotvorets/promise-chunk/actions/workflows/build.yml)
 [![codebeat badge](https://codebeat.co/badges/65aa8710-9d42-4160-8164-eb2b43255820)](https://codebeat.co/projects/github-com-myrotvorets-promise-chunk-master)
 
 Runs a list of native promises in chunks.
