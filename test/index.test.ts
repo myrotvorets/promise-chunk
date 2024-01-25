@@ -42,7 +42,7 @@ describe('promiseChunk', () => {
 
         const generator = function* (): Generator<Promise<number>> {
             for (const [value, ms] of input) {
-                // eslint-disable-next-line no-loop-func
+                // eslint-disable-next-line @typescript-eslint/no-loop-func
                 yield new Promise((resolve) => {
                     setTimeout(() => {
                         s += `${value}\n`;
