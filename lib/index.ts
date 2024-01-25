@@ -10,11 +10,11 @@ export default async function promiseChunk<T>(
     for (const item of generator()) {
         const promise = item.then(
             (r: T): T => {
-                queue.splice(queue.indexOf(promise), 1);
+                void queue.splice(queue.indexOf(promise), 1);
                 return r;
             },
             (e: Error): Error => {
-                queue.splice(queue.indexOf(promise), 1);
+                void queue.splice(queue.indexOf(promise), 1);
                 return e;
             },
         );
