@@ -1,4 +1,4 @@
-/* eslint-disable no-await-in-loop */
+/* eslint-disable no-await-in-loop, sonarjs/void-use */
 
 export default async function promiseChunk<T>(
     generator: () => Generator<Promise<T>>,
@@ -13,6 +13,7 @@ export default async function promiseChunk<T>(
                 void queue.splice(queue.indexOf(promise), 1);
                 return r;
             },
+            // eslint-disable-next-line @typescript-eslint/use-unknown-in-catch-callback-variable
             (e: Error): Error => {
                 void queue.splice(queue.indexOf(promise), 1);
                 return e;

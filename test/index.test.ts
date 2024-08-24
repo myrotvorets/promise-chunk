@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/no-nested-functions */
 import promiseChunk from '../lib';
 
 function timeToMs(time: [number, number]): number {
