@@ -1,13 +1,13 @@
 /* eslint-disable no-await-in-loop, sonarjs/void-use */
 
 export default async function promiseChunk<T>(
-    generator: () => Generator<Promise<T>>,
+    iterable: Iterable<Promise<T>>,
     chunkSize: number,
 ): Promise<(T | Error)[]> {
     const queue: Promise<T | Error>[] = [];
     const result: (Promise<T | Error> | T | Error)[] = [];
 
-    for (const item of generator()) {
+    for (const item of iterable) {
         const promise = item.then(
             (r: T): T => {
                 void queue.splice(queue.indexOf(promise), 1);
