@@ -1,4 +1,4 @@
-/* eslint-disable no-await-in-loop, sonarjs/void-use */
+/* eslint-disable no-await-in-loop */
 
 export default async function promiseChunk<T>(
     iterable: Iterable<Promise<T>>,
