@@ -32,5 +32,6 @@ export default async function promiseChunk<T>(
         await Promise.race(queue);
     }
 
+    // eslint-disable-next-line @typescript-eslint/await-thenable
     return Promise.all(result);
 }
