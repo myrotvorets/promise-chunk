@@ -1,4 +1,3 @@
-/* eslint-disable sonarjs/no-nested-functions */
 import { describe, it } from 'node:test';
 import assert, { deepEqual, equal } from 'node:assert/strict';
 import promiseChunk from '../lib';
